@@ -1,0 +1,5 @@
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\CalculatorDependency\bin\Debug\CalculatorDependency.dll
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\CalculatorDependency\bin\Debug\CalculatorDependency.pdb
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\CalculatorDependency\obj\Debug\CalculatorDependency.csproj.CoreCompileInputs.cache
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\CalculatorDependency\obj\Debug\CalculatorDependency.dll
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\CalculatorDependency\obj\Debug\CalculatorDependency.pdb

@@ -1,0 +1,6 @@
+obj\Debug\Product.wixobj
+obj\Debug\WiXDistinction.wixproj.BindContentsFileListnull.txt
+obj\Debug\WiXDistinction.wixproj.BindOutputsFileListnull.txt
+obj\Debug\WiXDistinction.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\WiXDistinction\bin\Debug\SetupCalculator.msi
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.3Distinction\Calculator\WiXDistinction\bin\Debug\SetupCalculator.wixpdb

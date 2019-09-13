@@ -1,0 +1,2 @@
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\Task1\Task1.1Pass\WixTask1.1\bin\Debug\WixTask1.1.msi
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\Task1\Task1.1Pass\WixTask1.1\bin\Debug\WixTask1.1.wixpdb

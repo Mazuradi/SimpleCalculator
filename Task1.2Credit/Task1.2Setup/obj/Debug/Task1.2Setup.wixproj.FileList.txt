@@ -1,0 +1,6 @@
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.2Credit\Task1.2Setup\bin\Debug\Task1.2Setup.msi
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.2Credit\Task1.2Setup\bin\Debug\Task1.2Setup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\Task1.2Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\Task1.2Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\Task1.2Setup.wixproj.BindBuiltOutputsFileListnull.txt

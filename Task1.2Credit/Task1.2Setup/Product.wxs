@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Task1.2Setup" Language="1033" Version="1.0.0.0" Manufacturer="Brock Giller" UpgradeCode="8592c12a-9036-40b5-ad37-187f3d814b3c">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab ="yes"/>
+
+		<Feature Id="ProductFeature" Title="Task1.2Setup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Task1.2Credit" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="Task1.2Credit.exe" Guid="972BC661-5666-4C11-A92F-2C5C8FA2F83B">
+        <File Id="Task1.2Credit.exe" Name="Task1.2Credit.exe" Source="$(var.Task1.2Credit.TargetDir)Task1.2Credit.exe" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

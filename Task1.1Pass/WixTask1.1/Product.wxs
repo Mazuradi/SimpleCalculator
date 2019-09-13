@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Task1.1PassInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Brock Giller" UpgradeCode="bbc5ad73-77cb-4e45-8a5b-d5a786c5e275">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="WixTask1.1" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Task1.1Pass" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<Component Id="Task1.1Pass.exe" Guid="6E6ECEB0-9191-4355-BEE0-5C1BE6858686">
+        <File Id="Task1.1Pass.exe" Name="Task1.1Pass.exe" Source="$(var.Task1.1Pass.TargetDir)Task1.1Pass.exe">
+          <!-- TODO: Insert files, registry keys, and other resources here. -->
+        </File>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
