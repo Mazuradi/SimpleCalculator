@@ -1,0 +1,2 @@
+MainPackage=C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\WapHDTask\bin\AnyCPU\Debug\WapHDTask_1.0.2.0_AnyCPU_Debug.msix
+SymbolPackage=C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\WapHDTask\obj\Debug\Symbols\WapHDTask_1.0.2.0_AnyCPU_Debug.appxsym

@@ -1,0 +1,4 @@
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\Calculator\bin\Debug\Calculator.exe
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\Calculator\bin\Debug\CalculatorDependency.dll
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\Calculator\bin\Debug\CalculatorLibrary.dll
+C:\Users\ghost\Documents\University\Semester2-2019\Software Deployment and Evoltion\Tutorials\PortfolioTasks\Task1\Task1.4HighDistinction\Calculator\bin\Debug\README.txt

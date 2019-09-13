@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="c3732e35-408c-4125-8ca7-d73f6b65e37c" Name="MyCalculator" Language="1033" Version="1.0.0.0" Manufacturer="Brock Giller" UpgradeCode="88a534e4-6bbd-43cb-ac3f-6d35e113e782">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <Icon Id="calcIcon.ico" SourceFile="$(var.ProjectDir)calcIcon.ico"/>
+    <Property Id="ARPPRODUCTION" Value="calcIcon.ico" />
+
+    <WixVariable Id="WixUIBannerBmp" Value="Images\installer_top-banner.bmp"/>
+    <WixVariable Id="WixUIDialogBmp" Value="Images\installer_background.bmp"/>
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)License.rtf"/>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+    
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="WiXDistinction" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut"/>
+      <ComponentRef Id="ApplicationShortcutDesktop"/>
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="MyCalculator" />
+			</Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="MyCalculator"/>
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+		</Directory>
+	</Fragment>
+
+  <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="1e0bbd7c-67f3-423c-891b-bd61434aded2">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="MyCalculator" Description="Simple Calculator" Target="[#Calculator.exe]" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\MyCalculator" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShortcutDesktop" Guid="2718f0d7-e13c-4670-a764-da2e4e3fcaf4">
+        <Shortcut Id="ApplicationDesktopShortcut" Name="MyCalculator" Description="Simple Calculator" Target="[#Calculator.exe]" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\MyCalculator" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="Calculator.exe" Guid="88254441-67e9-46ef-861f-ca76d2f4a0a5">
+        <File Id="Calculator.exe" Name="MyCalculator.exe" Source="$(var.Calculator.TargetDir)Calculator.exe"/>
+      </Component>
+      <Component Id="README.txt" Guid="6c4cb5c1-08db-4fda-a7e6-a5f2dc62e570">
+        <File Id="README.txt" Name="README.txt" Source="$(var.Calculator.TargetDir)README.txt" />
+      </Component>
+      <Component Id="CalculatorDependency.dll" Guid="54e26674-b891-4397-bcb5-7a493cb964e3">
+        <File Id="CalculatorDependency.dll" Name="CalculatorDependency.dll" Source="$(var.Calculator.TargetDir)CalculatorDependency.dll" />
+      </Component>
+      <Component Id="CalculatorLibrary.dll" Guid="fda63dc2-08c7-4b40-a96c-c068483b4f18">
+        <File Id="CalculatorLibrary.dll" Name="CalculatorLibrary.dll" Source="$(var.Calculator.TargetDir)CalculatorLibrary.dll"/>
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
