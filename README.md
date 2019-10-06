@@ -1,4 +1,4 @@
-# SimpleCalculator
+# Simple Calculator
 Deployment of Windows form applications (.NET framework) using Wix Toolset
 
 1. Pass Task - Deploy sample windoows form app with Wix
